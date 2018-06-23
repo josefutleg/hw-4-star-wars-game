@@ -1,0 +1,39 @@
+body {
+    font-family: 'Archivo Narrow', sans-serif;
+    color: rgba(255, 255, 0, 0.87);
+    background-image: url('../images/background.jpg');
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+img {
+    height: 150px;
+    width: 150px;
+    padding: 10px;
+
+}
+img:hover {
+    opacity: 0.6;
+    cursor: pointer;
+    content: attr('data-hp');
+    font-size: 10px;
+    text-align: center;
+}
+.character{
+    padding: 10px;
+    height: 150px;
+    width:  150px;
+    float: left;
+}
+button {
+    font-family: 'Archivo Narrow', sans-serif;
+    color: rgba(255, 255, 0, 0.87);
+    background-color: rgb(12, 41, 138);
+    font-size: 25px;
+    border: none;
+    outline: none;
+}
+/* h2 {
+    clear: both;
+} */
+
