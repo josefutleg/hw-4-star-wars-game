@@ -9,21 +9,55 @@ body {
 img {
     height: 150px;
     width: 150px;
-    padding: 10px;
-
 }
-img:hover {
-    opacity: 0.6;
+.character:hover {
+    padding: 0px;
+    /* opacity: 0.6; */
     cursor: pointer;
-    content: attr('data-hp');
-    font-size: 10px;
-    text-align: center;
+    border: solid 2px lightgreen;
+    color: lightgreen;
 }
-.character{
+.character {
+    position: relative;
     padding: 10px;
     height: 150px;
     width:  150px;
     float: left;
+}
+span {
+    position: absolute;
+}
+.name {
+    bottom: 8px;
+    right: 8px;
+}
+.attack {
+    top: 8px;
+    right: 8px;
+}
+.health {
+    top: 8px;
+    left: 8px;
+}
+.userC {
+    position: relative;
+    padding: 10px;
+    height: 150px;
+    width:  150px;
+    float: left;
+    padding: 0px;
+    border: solid 2px lightblue;
+    color: lightblue;
+}
+.enemyC {
+    position: relative;
+    padding: 10px;
+    height: 150px;
+    width:  150px;
+    float: left;
+    padding: 0px;
+    border: solid 2px indianred;
+    color: indianred;
 }
 button {
     font-family: 'Archivo Narrow', sans-serif;
@@ -32,8 +66,46 @@ button {
     font-size: 25px;
     border: none;
     outline: none;
+    cursor: pointer;
 }
-/* h2 {
+h2 {
     clear: both;
-} */
+}
+.chosenCharacter {
+    margin-bottom: 20px;
 
+}
+.currentOpponent {
+    margin-top: 20px;
+
+}
+@media only screen and (max-width: 667px) { 
+    body {
+        background-size: 100%;
+
+    }
+    img {
+        height: 100px;
+        width: 100px;
+    }
+    .character, .userC, .enemyC{
+        height: 100px;
+        width: 100px;
+    }
+
+}
+@media only screen and (max-width: 375px) { 
+    body {
+        background-size: 500%;
+
+    }
+    img {
+        height: 100px;
+        width: 100px;
+    }
+    .character, .userC, .enemyC{
+        height: 100px;
+        width: 100px;
+    }
+
+}
